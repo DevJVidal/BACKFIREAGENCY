@@ -1,0 +1,9 @@
+- [ ] Remover o 4º card (“Landing Page - Empresa de Consultoria”) do array em `src/components/backfire/Portfolio.tsx`
+- [ ] Garantir 3 cards apenas na linha no desktop (grid md:grid-cols-3) e centralização horizontal
+- [ ] Ajustar layout dos cards para mesma altura e alinhamento perfeito do botão (“Acesse Aqui”):
+  - [ ] Usar `flex flex-col` no card
+  - [ ] Usar `flex-1` e `line-clamp` na descrição para altura consistente
+  - [ ] Garantir botão sempre na base com `mt-auto`
+- [ ] Adicionar/ajustar hover premium suave sem “quicar” altura
+- [ ] Testar visualmente (mobile/tablet/desktop)
+- [ ] Subir para o git
