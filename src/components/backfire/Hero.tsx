@@ -1,6 +1,6 @@
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { Button } from "@/components/ui/button";
-import contabilidadeFoto from "@/assets/contabilidade-foto.png";
+import heroLaptop from "@/assets/hero-laptop.png";
 
 export function Hero() {
   return (
@@ -80,8 +80,8 @@ export function Hero() {
             style={{ transformStyle: "preserve-3d" }}
           >
             <img
-              src={contabilidadeFoto}
-              alt="Foto de escritório de contabilidade premium"
+              src={heroLaptop}
+              alt="Notebook moderno exibindo landing page premium criada pela BackFire"
               width={1536}
               height={1152}
               fetchPriority="high"

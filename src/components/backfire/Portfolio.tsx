@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import fluxenPortfolio from "@/assets/fluxen-portfolio.png";
 import p2 from "@/assets/portfolio-2.jpg";
 import p3 from "@/assets/portfolio-3.jpg";
+import contabilidadeFoto from "@/assets/contabilidade-foto.png";
 
 const projects = [
   {
@@ -11,6 +12,11 @@ const projects = [
     desc: "Uma solução moderna e eficiente para gestão e automação, desenvolvida para otimizar processos e melhorar resultados.",
     link: "https://fluxen-sistema-de-vendas.vercel.app/",
     isSpecial: true,
+  },
+  {
+    img: contabilidadeFoto,
+    title: "Landing Page - Prime Contabilidade Estratégica",
+    desc: "Landing page premium para escritório contábil, com design moderno, responsivo e foco em autoridade, conversão e captação de clientes.",
   },
   {
     img: p2,
