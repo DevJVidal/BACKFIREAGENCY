@@ -1,6 +1,6 @@
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { Button } from "@/components/ui/button";
-import heroLaptop from "@/assets/hero-laptop.png";
+import contabilidadeFoto from "@/assets/CONTABILIDADE FOTO.PNG";
 
 export function Hero() {
   return (
@@ -36,17 +36,13 @@ export function Hero() {
       <div className="container relative mx-auto px-6 grid lg:grid-cols-[1fr_1.15fr] gap-12 items-center">
         <div className="animate-fade-up">
           <div className="inline-block px-5 py-2 mb-6 rounded-full border-2 border-primary text-primary text-sm font-semibold animate-pulse-glow">
-            🔥 Site em até 30 dias
+            ⭐ Prime Contabilidade Estratégica
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Perdendo clientes por falta de um site?{" "}
-            <span className="text-gradient-fire">Criamos o seu</span> para
-            atrair vendas!
+            Landing page premium para escritório contábil
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Comece agora e deixe de ser um{" "}
-            <strong className="text-foreground">invisível digital</strong>.
-            Preparado para vender mais? Entre em contato.
+            Design moderno, responsivo e com foco em autoridade, conversão e captação de clientes.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button variant="hero" size="xl" asChild>
@@ -84,8 +80,8 @@ export function Hero() {
             style={{ transformStyle: "preserve-3d" }}
           >
             <img
-              src={heroLaptop}
-              alt="Notebook moderno exibindo landing page premium criada pela BackFire"
+              src={contabilidadeFoto}
+              alt="Foto de escritório de contabilidade premium"
               width={1536}
               height={1152}
               fetchPriority="high"
