@@ -17,7 +17,7 @@ const projects = [
     img: contabilidadeFoto,
     title: "Landing Page - Prime Contabilidade Estratégica",
     desc: "Landing page premium para escritório contábil, com design moderno, responsivo e foco em autoridade, conversão e captação de clientes.",
-    link: "https://primecontabilidade.vercel.app/",
+    link: "https://contabilidade-2-smoky.vercel.app/",
   },
   {
     img: p2,
