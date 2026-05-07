@@ -35,26 +35,43 @@ export function Hero() {
 
       <div className="container relative mx-auto px-6 grid lg:grid-cols-[1fr_1.15fr] gap-12 items-center">
         <div className="animate-fade-up">
-          <div className="inline-block px-5 py-2 mb-6 rounded-full border-2 border-primary text-primary text-sm font-semibold animate-pulse-glow">
-            ⭐ Prime Contabilidade Estratégica
+          {/* Mini texto */}
+          <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full border-2 border-primary text-primary text-sm font-semibold animate-pulse-glow">
+            🔥 <span>Site em até 30 dias</span>
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-            Landing page premium para escritório contábil
+
+          {/* Título (impactante + destaque laranja) */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.02] tracking-tight text-left">
+            Perdendo clientes
+            <br />
+            por falta de um site?
+            <br />
+            <span className="text-primary drop-shadow-[0_0_18px_rgba(255,69,0,0.35)]">
+              Criamos o seu
+            </span>{" "}
+            para
+            <br />
+            atrair vendas!
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Design moderno, responsivo e com foco em autoridade, conversão e captação de clientes.
+
+          {/* Descrição */}
+          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+            Comece agora e deixe de ser um invisível digital. Preparado para vender mais? Entre em contato.
           </p>
+
+          {/* Botões */}
           <div className="mt-8 flex flex-wrap gap-4">
             <Button variant="hero" size="xl" asChild>
-              <a 
-                href="https://wa.me/5569999627328?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
-                target="_blank" 
+              <a
+                href="https://wa.me/5569999627328?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gr%C3%A1tis."
+                target="_blank"
                 rel="noreferrer"
               >
                 <WhatsAppIcon className="w-6 h-6 mr-2" />
                 Solicitar Orçamento Grátis
               </a>
             </Button>
+
             <Button variant="outlineFire" size="xl" asChild>
               <a href="#portfolio">Ver Portfólio</a>
             </Button>
