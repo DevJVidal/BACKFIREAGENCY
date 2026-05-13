@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import fluxenPortfolio from "@/assets/fluxen-portfolio.png";
 import siteLaMelanina from "@/assets/site lamelanina.png";
 import nobleHausImg from "@/assets/imobiliaria.png";
-import { cn } from "@/lib/utils";
 
 const projects = [
   {
@@ -11,23 +10,18 @@ const projects = [
     title: "Sistema Fluxen",
     desc: "Uma solução moderna e eficiente para gestão e automação, desenvolvida para otimizar processos e melhorar resultados.",
     link: "https://fluxen-sistema-de-vendas.vercel.app/",
-    isSpecial: true,
-    btnText: "Acesse Aqui",
   },
   {
     img: nobleHausImg,
     title: "NobleHaus — Imóveis de Alto Padrão",
     desc: "Landing page premium para imobiliária de alto padrão, com design sofisticado, experiência elegante e foco em exclusividade.",
     link: "https://noblehausbeta.vercel.app/",
-    isPremium: true,
-    btnText: "Ver Projeto",
   },
   {
     img: siteLaMelanina,
     title: "La Melanina Bronzeamento Premium",
     desc: "Landing page elegante e responsiva desenvolvida para estúdio de bronzeamento premium, com design sofisticado, foco em conversão, experiência moderna e agendamento online.",
     link: "https://la-melanina.vercel.app/#inicio",
-    btnText: "Acesse Aqui",
   },
 ];
 
@@ -50,44 +44,16 @@ export function Portfolio() {
           {projects.map((p) => (
             <article
               key={p.title}
-              className={cn(
-                "card-hover group bg-gradient-card border border-border/50 rounded-2xl overflow-hidden p-6 flex flex-col h-full transition-all duration-500",
-                p.isPremium 
-                  ? "border-primary/50 ring-1 ring-primary/20 shadow-glow md:scale-105 z-10" 
-                  : "hover:-translate-y-2"
-              )}
+              className="card-hover group bg-gradient-card border border-border/50 rounded-2xl overflow-hidden p-6 flex flex-col h-full transition-all duration-500 hover:-translate-y-2"
             >
-              <div
-                className={cn(
-                  "relative overflow-hidden rounded-xl aspect-video mb-6 bg-black/40 transition-smooth",
-                  p.isSpecial || p.isPremium
-                    ? "ring-2 ring-primary/20 shadow-[0_30px_70px_rgba(0,0,0,0.7),0_0_30px_rgba(255,69,0,0.1)] group-hover:shadow-glow-strong"
-                    : ""
-                )}
-              >
-                {p.isPremium && (
-                  <div className="absolute top-3 left-3 z-30 bg-primary px-3 py-1 rounded-full shadow-lg border border-white/10 animate-pulse-glow">
-                    <span className="text-[10px] font-black text-white uppercase tracking-widest">
-                      Projeto Premium
-                    </span>
-                  </div>
-                )}
-                
+              <div className="relative overflow-hidden rounded-xl h-[240px] mb-6 bg-black/40 transition-smooth border border-white/5">
                 <img
                   src={p.img}
                   alt={p.title}
                   loading="lazy"
-                  width={800}
-                  height={600}
-                  className={cn(
-                    "w-full h-full transition-smooth group-hover:scale-[1.10]",
-                    (p.isSpecial || p.isPremium) ? "object-cover" : "object-cover"
-                  )}
+                  className="w-full h-full object-cover transition-smooth group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth" />
-                {(p.isSpecial || p.isPremium) && (
-                  <div className="absolute inset-0 ring-1 ring-inset ring-primary/30 rounded-xl pointer-events-none" />
-                )}
               </div>
 
               <h3 className="text-xl font-bold mb-3 group-hover:text-gradient-fire transition-smooth">
@@ -105,7 +71,7 @@ export function Portfolio() {
                     target={p.link ? "_blank" : "_self"}
                     rel="noopener noreferrer"
                   >
-                    {p.btnText} <ArrowUpRight className="w-4 h-4" />
+                    Acesse Aqui <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </Button>
               </div>
