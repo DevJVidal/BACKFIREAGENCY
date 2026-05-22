@@ -66,9 +66,9 @@ export function Services() {
                 </div>
 
                 <Button variant="hero" size="lg" asChild>
-                  <a 
-                    href="https://wa.me/5569999627328?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
-                    target="_blank" 
+                  <a
+                    href="https://wa.me/5569999627328?text=OL%C3%81%20FDP%2C%20VIM%20PELO%20SITE.%20BOLA%208"
+                    target="_blank"
                     rel="noreferrer"
                   >
                     <WhatsAppIcon className="w-5 h-5 mr-2" />
